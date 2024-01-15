@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'presentation/screens/home_screen.dart';
 
 Future<void> main() async {
-    WidgetsFlutterBinding.ensureInitialized();
-  await SharedPreferences.getInstance(); // Ensure SharedPreferences is initialized
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPreferences
+      .getInstance(); // Ensure SharedPreferences is initialized
 
   runApp(MyApp());
 }
